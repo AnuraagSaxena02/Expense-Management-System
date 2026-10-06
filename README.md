@@ -23,44 +23,30 @@ A full-stack expense tracking application that helps users log daily expenses, a
 | Logging | Python `logging` |
 
 ## 📁 Project Structure
-expense-management-system/
-├── frontend/ # Streamlit UI
-│ ├── app.py
-│ ├── add_update_ui.py
-│ ├── analytics_by_category.py
-│ └── analytics_by_months.py
-├── backend/ # FastAPI server
-│ ├── server.py
-│ ├── db_helper.py
-│ └── logging_setup.py
-├── tests/ # Unit & integration tests
-│ └── conftest.py
-├── requirements.txt
-├── .env.example
-└── README.md
 
-text
+- **frontend/**: Contains the Streamlit application code.
+- **backend/**: Contains the FastAPI backend server code.
+- **tests/**: Contains the test cases for both frontend and backend.
+- **requirements.txt**: Lists the required Python packages.
+- **README.md**: Provides an overview and instructions for the project.
 
-## ⚙️ Setup Instructions
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/expense-management-system.git
-cd expense-management-system
-2. Install dependencies
-bash
-pip install -r requirements.txt
-3. Configure environment variables
-Create a .env file in the root directory:
+## Setup Instructions
 
-text
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=expense_manager
-4. Run the FastAPI backend
-bash
-uvicorn backend.server:app --reload
-5. Run the Streamlit frontend
-bash
-streamlit run frontend/app.py
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AnuraagSaxena02/Expense-Management-System.git
+   cd Expense-Management-System
+   ```
+1. **Install dependencies:**:   
+   ```commandline
+    pip install -r requirements.txt
+   ```
+1. **Run the FastAPI server:**:   
+   ```commandline
+    uvicorn server.server:app --reload
+   ```
+1. **Run the Streamlit app:**:   
+   ```commandline
+    streamlit run frontend/app.py
+   ```
